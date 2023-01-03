@@ -30,4 +30,9 @@ public class UserController {
     public String forAdmin() {
         return "This URL is only accessible to admin";
     }
+
+    @GetMapping({"/forUser"})
+    public String forUser() {
+        return "This URL is only accessible to the user";
+    }
 }
